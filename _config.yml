@@ -1,5 +1,68 @@
-title: Ramdarsh M S
+#title: Ramdarsh M S
 #logo: /assets/img/headshot_circle.png
 #description: text below image
 #show_downloads: true
-theme: jekyll-theme-minimal
+#theme: jekyll-theme-minimal
+title: "Ramdarsh M S"
+description: "MCA aspirant | Data Annotator | Weather Web App"
+url: "https://ramdarsh.github.io"
+baseurl: ""
+lang: en
+
+theme: minima
+# Or use a richer theme via remote_theme:
+# remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name: "Ram Darsh"
+  bio: "MCA aspirant, Data Annotator @ AI Telus; Digital Data Associate @ Outline Media Solutions"
+  links:
+    - label: "GitHub"
+      url: "https://github.com/ramdarsh"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/"
+    - label: "Email"
+      url: "mailto:you@example.com"
+
+navigation:
+  - title: "Home"
+    url: /
+  - title: "Education"
+    url: /education/
+  - title: "Experience"
+    url: /experience/
+  - title: "Projects"
+    url: /projects/
+  - title: "Resume"
+    url: /assets/resume.pdf
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+exclude:
+  - node_modules
+  - vendor
+
